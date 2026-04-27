@@ -12,7 +12,7 @@ prices[i] + prices[j] \le budget
 \]
 
 ### Solution
-This problem's Java solution is in `src/main/java/Solution.java` with the core logic implemented in:
+This problem's Java solution is in `src/main/java/CountAffordablePairs.java` with the core logic implemented in:
 
 - `Result.countAffordablePairs(List<Integer> prices, int budget)`
 
@@ -22,7 +22,7 @@ This problem's Java solution is in `src/main/java/Solution.java` with the core l
 
 ### Run locally
 Compile:
-- `javac src/main/java/Solution.java`
+- `javac src/main/java/CountAffordablePairs.java`
 
 Run (example using stdin):
-- `type input.txt | java -cp src/main/java Solution`
+- `type input.txt | java -cp src/main/java CountAffordablePairs`

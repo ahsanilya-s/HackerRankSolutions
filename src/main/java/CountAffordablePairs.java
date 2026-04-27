@@ -47,7 +47,7 @@ public static int countAffordablePairs(List<Integer> prices, int budget) {
 
 }
 
-public class Solution {
+public class CountAffordablePairs {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
