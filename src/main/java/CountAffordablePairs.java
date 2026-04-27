@@ -10,6 +10,23 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
+/*
+ * Revision notes (Problem #15: Count Affordable Pairs)
+ *
+ * Goal:
+ * - Count how many index pairs (i < j) have prices[i] + prices[j] <= budget.
+ *
+ * Current approach in this file:
+ * - Brute force over all pairs using two pointers (j, i) that enumerate every (j, i) combination.
+ *
+ * Complexity:
+ * - Time: O(n^2)
+ * - Space: O(1) extra (excluding input)
+ *
+ * Interview tip:
+ * - If asked to optimize, sort prices and use two-pointer counting to get O(n log n) time.
+ */
+
 
 
 class Result {

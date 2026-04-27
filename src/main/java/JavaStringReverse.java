@@ -1,5 +1,20 @@
 import java.util.*;
 
+/*
+ * Revision notes (Java String Reverse / Palindrome)
+ *
+ * Goal:
+ * - Given a string, print "Yes" if it's a palindrome, otherwise "No".
+ *
+ * Approach:
+ * - Build reversed string and compare to original.
+ *
+ * Complexity:
+ * - Time: O(n^2) in Java if using String concatenation in a loop (creates many strings).
+ *
+ * Interview tip:
+ * - Prefer StringBuilder (O(n)) or two-pointer comparison from both ends.
+ */
 public class JavaStringReverse {
 
     public static void main(String[] args) {

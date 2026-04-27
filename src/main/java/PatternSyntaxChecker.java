@@ -3,6 +3,19 @@ import java.util.*;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
+/*
+ * Revision notes (Pattern Syntax Checker)
+ *
+ * Goal:
+ * - For each regex pattern, print "Valid" if it compiles, otherwise "Invalid".
+ *
+ * Approach:
+ * - Try Pattern.compile(pattern)
+ * - Catch PatternSyntaxException
+ *
+ * Complexity:
+ * - Depends on regex length/structure; compilation is roughly O(L) for typical patterns.
+ */
 public class PatternSyntaxChecker {
 
     public static void main(String[] args) {

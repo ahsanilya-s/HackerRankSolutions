@@ -1,6 +1,25 @@
 import java.io.*;
 import java.util.*;
 
+/*
+ * Revision notes (Java Substring Comparisons)
+ *
+ * Goal:
+ * - For a given string and k, print:
+ *   1) the lexicographically smallest substring of length k
+ *   2) the lexicographically largest substring of length k
+ *
+ * Approach:
+ * - Slide a window of length k over the string
+ * - Track min/max using String.compareTo (lexicographic order)
+ *
+ * Complexity:
+ * - Time: O((n-k+1) * k) due to substring creation/compare cost
+ * - Space: O(1) extra (not counting substring objects)
+ *
+ * Interview tip:
+ * - For very large inputs, avoid creating many substrings; compare via indices if needed.
+ */
 public class JavaSubstringComparisons {
     
     public static String getSmallestSubstring(String str, int k) {
